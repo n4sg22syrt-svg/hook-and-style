@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hook and Style Hand Made Crochet Items</title>
+    <style>
+    * { 
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #FFF8FA;
+        color: #684653;
+    }
+    /*NAVIGATION*/
+
+    nav {
+        background-color: #FFF0F5;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo { 
+        font-family: Georgia, serif;
+        font-size: 25px;
+        color: #C45B86;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: #87566B;
+        text-decoration: none;
+        margin-left: 18px;
+        font-size: 14px;
+    }
+
+    /*HERO*/
+    
+    .hero {
+        min-height: 80vh;
+        padding: 80px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(
+            135deg, #FFE6EF, #FFF518, #FCE1EB
+        );
+
+    }
+
+    .hero-content {
+        max-width: 650px;
+    }
+
+    .hero-small {
+        color: #C45B86;
+        letter-spacing: 4px;
+    }
+
+    .hero h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(42px, 8vw, 75px);
+        color: #C45B86;
+        margin: 24px 0;
+    }
+
+    .hero p {
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+}
+
+.btn {
+
+    display: inline-block;
+
+    background: #d879a0;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    margin: 5px;
+
+    transition: .3s;
+
+}
+
+.btn:hover {
+
+    background: #b94e7c;
+
+    transform: translateY(-3px);
+
+}
+
+/* SECTIONS */
+
+section {
+
+    padding: 75px 8%;
+
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+
+.section-title h2 {
+
+    font-family: Georgia, serif;
+
+    color: #c45b86;
+
+    font-size: 35px;
+
+    margin-bottom: 12px;
+
+}
+
+/* PRODUCTS */
+
+.product-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+    gap: 25px;
+
+}
+
+.product {
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px #e8cbd6;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.product:hover {
+
+    transform: translateY(-6px);
+
+}
+
+.product img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.product h3 {
+
+    color: #b95d82;
+
+    margin: 18px 10px 8px;
+
+}
+
+.product p {
+
+    color: #987482;
+
+    margin-bottom: 15px;
+
+}
+
+.price {
+
+    font-weight: bold;
+
+    color: #c45b86;
+
+    margin-bottom: 15px;
+
+}
+
+.order-btn {
+
+    display: inline-block;
+
+    background: #f4c5d7;
+
+    color: #79465c;
+
+    text-decoration: none;
+
+    padding: 10px 20px;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+}
+
+/* CUSTOM ORDERS */
+
+.custom {
+
+    background: #ffeaf1;
+
+    text-align: center;
+
+}
+
+.custom h2 {
+
+    font-family: Georgia, serif;
+
+    color: #c45b86;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+.custom p {
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+/* FOOTER */
+
+footer {
+
+    background: #f9dce8;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    color: #87566b;
+
+    line-height: 2;
+
+}
+
+@media(max-width: 600px) {
+
+    nav {
+
+        justify-content: center;
+
+        text-align: center;
+
+    }
+
+    nav a {
+
+        margin: 7px;
+
+    }
+
+    section {
+
+        padding: 55px 6%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">Hook & Style ♡</div>
+
+    <div>
+
+        <a href="#home">Home</a>
+
+        <a href="#shop">Shop</a>
+
+        <a href="#custom">Custom Orders</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
+
+<!-- HOMEPAGE -->
+
+<div class="hero" id="home">
+
+    <div class="hero-content">
+
+        <small>HANDMADE WITH LOVE</small>
+
+        <h1>You've Found Me.</h1>
+
+        <p>
+
+            Welcome to Hook & Style!
+
+            Discover handmade crochet creations
+
+            made with love, creativity, and care.
+
+            Every stitch tells a little story.
+
+        </p>
+
+        <a href="#shop" class="btn">
+
+            Explore Collection ♡
+
+        </a>
+
+        <a href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy"
+
+        class="btn" target="_blank">
+
+            Visit Instagram
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- PRODUCT GALLERY -->
+
+<section id="shop">
+
+    <div class="section-title">
+
+        <h2>Our Little Collection ♡</h2>
+
+        <p>Something handmade, just for you.</p>
+
+    </div>
+
+    <div class="product-grid">
+
+        <div class="product">
+
+            <img src="https://placehold.co/500x400/ffe0eb/c45b86?text=Crochet+Flowers" alt="Crochet flowers">
+
+            <h3>Crochet Flowers</h3>
+
+            <p>Beautiful handmade blooms.</p>
+
+            <div class="price">"Depends on size and design"</div>
+
+            <a class="order-btn" href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy" target="_blank">Order Now ♡</a>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/500x400/ffe0eb/c45b86?text=Crochet+Bouquets" alt="Crochet bouquets">
+
+            <h3>Crochet Bouquets</h3>
+
+            <p>Flowers that last forever.</p>
+
+            <div class="price">"Depends on size and design"</div>
+
+            <a class="order-btn" href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy" target="_blank">Order Now ♡</a>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/500x400/ffe0eb/c45b86?text=Crochet+Plushies" alt="Crochet plushies">
+
+            <h3>Crochet Plushies</h3>
+
+            <p>Soft and adorable companions.</p>
+
+            <div class="price">"Depends on size and design"</div>
+
+            <a class="order-btn" href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy" target="_blank">Order Now ♡</a>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/500x400/ffe0eb/c45b86?text=Crochet+Keychains" alt="Crochet keychains">
+
+            <h3>Crochet Keychains</h3>
+
+            <p>Little handmade accessories.</p>
+
+            <div class="price">"Depends on size and design"</div>
+
+            <a class="order-btn" href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy" target="_blank">Order Now ♡</a>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/500x400/ffe0eb/c45b86?text=Crochet+Bags" alt="Crochet bags">
+
+            <h3>Crochet Bags</h3>
+
+            <p>Style made by hand.</p>
+
+            <div class="price">"Depends on size and design"</div>
+
+            <a class="order-btn" href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy" target="_blank">Order Now ♡</a>
+
+        </div>
+
+        <div class="product">
+
+            <img src="https://placehold.co/500x400/ffe0eb/c45b86?text=Crochet+Accessories" alt="Crochet accessories">
+
+            <h3>Crochet Accessories</h3>
+
+            <p>Small details, special touches.</p>
+
+            <div class="price">"Depends on size and design"</div>
+
+            <a class="order-btn" href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy" target="_blank">Order Now ♡</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CUSTOM ORDERS -->
+
+<section class="custom" id="custom">
+
+    <h2>Made Just For You ♡</h2>
+
+    <p>
+
+        Have something special in mind?
+
+        We also accept custom crochet orders!
+
+        Choose your design, color, and style.
+
+        Let's create something beautiful that will fit your unique style.
+
+    </p>
+
+    <a class="btn"
+
+    href="https://www.instagram.com/hook.andstyle?cplk=cHo2YTdzY2dsMnUy"
+
+    target="_blank">
+
+    Request a Custom Order
+
+    </a>
+
+</section>
+
+<!-- CONTACT -->
+
+<footer id="contact">
+
+    <h2>Hook & Style ♡</h2>
+
+    <p>Handmade with love, one stitch at a time.</p>
+
+    <p>
+
+        Instagram:
+
+        @hook and style
+
+    </p>
+
+    <p>© 2013 Hook & Style. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+
+</html>
